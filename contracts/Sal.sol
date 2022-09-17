@@ -14,7 +14,7 @@ contract allemp{
         address salAddress,
         string image,
         uint indexed timestamp,
-        string indexed Posotion
+        string indexed Position
     );
 
     function addemp (
@@ -23,14 +23,14 @@ contract allemp{
         string memory _wallet_ddress,
         string memory _Country,
         string memory _image,
-        string memory _Posotion)
+        string memory _Position)
         public {
         Sal newSal= new Sal(
-            _FirstName,_LastName,_wallet_ddress,_Posotion,_Country,_image
+            _FirstName,_LastName,_wallet_ddress,_Position,_Country,_image
         );
         deployedSal.push(address(newSal));
 
-        emit salcreated(_FirstName,_LastName,msg.sender,address(newSal),_image, block.timestamp,_Posotion);
+        emit salcreated(_FirstName,_LastName,msg.sender,address(newSal),_image, block.timestamp,_Position);
     }
 }
 
@@ -39,7 +39,7 @@ contract Sal{
     string public FirstName;
     string public LastName;
     string public wallet_address;
-    string public Posotion;
+    string public Position;
     string public Country;
     string public image;
 
@@ -53,7 +53,7 @@ contract Sal{
         string memory _FirstName,
         string memory _LastName,
         string memory _wallet_ddress,
-        string memory _Posotion,
+        string memory _Position,
         string memory _Country,
         string memory _image
     )
@@ -61,7 +61,7 @@ contract Sal{
         FirstName = _FirstName;
         LastName = _LastName;
         wallet_address = _wallet_ddress;
-        Posotion =_Posotion;
+        Position =_Position;
         Country =_Country;
         image = _image;
         owner = payable(msg.sender);

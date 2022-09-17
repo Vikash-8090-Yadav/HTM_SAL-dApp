@@ -38,8 +38,8 @@
       ]
     },
     "/home/vikash/Desktop/all_git_files/HTM_SAL-dApp/contracts/Sal.sol": {
-      "lastModificationDate": 1663348078051,
-      "contentHash": "05c0e370488e844ed47244ce856f2fdb",
+      "lastModificationDate": 1663434290549,
+      "contentHash": "34e2f8cb2fb7e300fecac300aefb4fa2",
       "sourceName": "contracts/Sal.sol",
       "solcConfig": {
         "version": "0.8.10",

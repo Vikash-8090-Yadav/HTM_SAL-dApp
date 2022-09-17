@@ -220,6 +220,10 @@ wrapperM ul li{
   cursor: pointer;
 }
 
+.CardImg{position: relative;
+  height: 120px;
+  width: 100%;
+}
 .CardsWrapper{
   display: flex;
   justify-content: space-between;
@@ -252,7 +256,7 @@ wrapperM ul li{
   font-family: 'Roboto';
   font-size: 18px;
   margin: 2px 0px;
-  background-color:black;
+  background-color:Yellow;
   padding: 5px;
   cursor: pointer;
   font-weight: normal;

@@ -8,7 +8,7 @@ import { ethers } from 'ethers';
 import { useState } from 'react';
 import Link from 'next/link'
 import { Button } from '@mui/material';
-import allemp from "../../artifacts/contracts/Sal.sol/allemp.json"
+import allemp from "../artifacts/contracts/Sal.sol/allemp.json"
 
 export default function Home({
       AllData,
@@ -18,7 +18,6 @@ export default function Home({
       WebData
     }){
       const[filter , setFilter] = useState(AllData);
-      console.log("data",filter);
   return (
     <div>
     <div className = "HomeWrapper">
@@ -30,13 +29,13 @@ export default function Home({
         <div className='Category' onClick={()=>setFilter(SDEData)}>S.D.E</div>
       </div>
       <div className='Cardsswapper'>
-      {filter?.map((e)=>{
+      {filter.map((e)=>{
         console.log("image->",e.image);
         return (
           < div className='Card'>
             <div className='CardImg'>
               <Image layout ="fill"
-              src = {"https://ipfs.infura.io/ipfs/"+e.image}
+              src = {"https://sal-dapp.infura-ipfs.io/ipfs/" + e.image}
               />
             </div>
             <div className="Title">
@@ -65,16 +64,17 @@ export default function Home({
       </div>
     </div>
     </div>
+    // </div>
   )
 }
 
 export async function getStaticProps(){
   const provider= new ethers.providers.JsonRpcProvider(
-    "https://polygon-mumbai.infura.io/v3/95688893704a4d5bac083296c3547383"
+    "https://polygon-mumbai.g.alchemy.com/v2/MeKFrDq5O-mlM8I0CzXpKg0pRvdNRjxF"
   );
 
   const contract = new ethers.Contract(
-    "0x5F61cAacCEe71d36D7a3d9c1dE73Db9237e04505",
+    "0x1681F1676cb3685bD28a3ea2D0BA56D42eEAe564",
     allemp.abi,
     provider
   );
@@ -82,11 +82,14 @@ export async function getStaticProps(){
   const getALlData = contract.filters.salcreated();
   const All = await contract.queryFilter(getALlData);
 
+  console.log("a;llll->",All);
+
   const AllData = All.map((e)=>{
     return{
       FirstName : e.args.FirstName,
       LastName : e.args.LastName,
       owner : e.args.owner,
+      image : e.args.image,
       timestamp : parseInt(e.args.timestamp)
     }
   });
@@ -98,6 +101,7 @@ export async function getStaticProps(){
       FirstName : e.args.FirstName,
       LastName : e.args.LastName,
       owner : e.args.owner,
+      image : e.args.image,
       timestamp : parseInt(e.args.timestamp)
     }
   });
@@ -110,18 +114,20 @@ export async function getStaticProps(){
       FirstName : e.args.FirstName,
       LastName : e.args.LastName,
       owner : e.args.owner,
+      image : e.args.image,
       timestamp : parseInt(e.args.timestamp)
     }
   });
   const getSDE2Data = contract.filters.salcreated(null,null,null,null,null,null,'S.D.E-2');
-  console.log("sde",geSDE2Data);
+  console.log("sdxe",getSDE2Data);
   const SDE2 = await contract.queryFilter(getSDE2Data);
-
+  console.log("sde2",SDE2);
   const SDEData = SDE2.map((e)=>{
     return{
       FirstName : e.args.FirstName,
       LastName : e.args.LastName,
       owner : e.args.owner,
+      image : e.args.image,
       timestamp : parseInt(e.args.timestamp)
     }
   });
@@ -133,11 +139,10 @@ export async function getStaticProps(){
       FirstName : e.args.FirstName,
       LastName : e.args.LastName,
       owner : e.args.owner,
+      image : e.args.image,
       timestamp : parseInt(e.args.timestamp)
     }
   });
-
-  console.log(AllData);
   return {
     props:{
       AllData,

@@ -68,7 +68,7 @@ export default function AddEmpForm() {
         console.log(Handler.Image);
         const added = await client.add(Handler.Image);
         console.log(added);
-        
+
         await Handler.setImageurl(added.path);
       }
       catch(error){
@@ -119,12 +119,12 @@ export default function AddEmpForm() {
               <div className="arrow"></div>
             </div>
             <div className="inpiut-name">
-             <label className = "name1">select image</label> 
+             <label className = "name1">select image</label>
              <input  onChange={Handler?.ImageHandler}  type ="file" accept="image/*" className="name2"/>
             </div>
             <div className="inpiut-name">
               {Uploading == true ?<button className="button"><TailSpin color="#fff" height={20}/></button> :uploaded == false?
-              <button onClick={uploadfiles} className="button">Upload to IPFS</button> :<button style = {{cursor:"no-drop"}} className="button">Files uploaded sucessfully</button> } 
+              <button onClick={uploadfiles} className="button">Upload to IPFS</button> :<button style = {{cursor:"no-drop"}} className="button">Files uploaded sucessfully</button> }
             </div>
             <div className="inpiut-name">
               <button  className="button" onClick={Handler?.Addemp}>ADD EMPLOYEE</button>
@@ -132,8 +132,6 @@ export default function AddEmpForm() {
           </form>
         </div>
       </div>
-      </> 
+      </>
     )
   }
- 
-  
