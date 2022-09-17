@@ -1,10 +1,9 @@
-import styles from "../styles/nav.module.css"
 import Link from "next/link"
 export default function   NavL() {
   return (
     <>
     <wrapper>
-      left
+      <div class="text-extrabold text-bold text-3xl font-serif">Meta.eth</div>
       </wrapper>
     </>
   )

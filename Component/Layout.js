@@ -1,3 +1,4 @@
+
 import NavL from "./navL"
 import NavM from "./navM"
 import NavR from "./navR"
@@ -15,7 +16,7 @@ export default function Layout({children}) {
   return (
     <>
     <ToastContainer/>
-    <headerall className="nav">
+    <headerall className="  h-14 bg-gradient-to-r from-indigo-800 nav ">
     <NavL/>
     <NavM/>
     <NavR/>
@@ -26,16 +27,15 @@ export default function Layout({children}) {
     <Mainc>{children}</Mainc>
     <Rights/>
     </lms>
-    
+
     {/*
-    THis lsm stand for the LEFT MAIN  and RIGHT-SIDE 
+    THis lsm stand for the LEFT MAIN  and RIGHT-SIDE
   */}
 
-    <main className = "mn">
+    <main className = " mn">
       <About/>
       <Contact/>
     </main>
     </>
   )
 }
-
