@@ -5,35 +5,9 @@ import { toast } from "react-toastify";
 import { TailSpin } from "react-loader-spinner";
 import {create as IPFSHTTPClient} from "ipfs-http-client";
 
-// import { Buffer } from "buffer";
+
 const projectId = '2EFZSrxXvWgXDpOsDrr4cQosKcl';
 const ProjectSecret = 'b84c6cb2eec9c4536a0b6424ca709f9d';
-
-// if(process.browser){
-//   console.log(window.location.pathname);
-//   const buffer = window.buffer;
-//   // console.log(Buffer);
-//   console.log("buffer", buffer)
-
-//   const auth = "Basic" + Buffer.from(projectId+":"+ProjectSecret).toString('base64')
-
-//   const client = IPFSHTTPClient({
-//     host: 'ipfs.infura.io',
-//     port: 5001,
-//     protocol: 'https',
-//     // apiPath:'/api/v0/',
-//     headers: {
-//         authorization: auth,
-//     }
-// });
-//   client.add("Hello World").then((res) => {
-
-//   console.log(res);
-// });
-
-// }
-// var buffer = window.buffer;
-// console.log("buffer", buffer)
 
 const auth = 'Basic ' + Buffer.from(projectId +  ":" + ProjectSecret).toString('base64')
 
@@ -41,7 +15,6 @@ const client = IPFSHTTPClient({
     host: 'ipfs.infura.io',
     port: 5001,
     protocol: 'https',
-    // apiPath:'/api/v0/',
     headers: {
         authorization: auth,
     }
@@ -49,8 +22,6 @@ const client = IPFSHTTPClient({
 client.add("Hello World").then((res) => {
   console.log(res);
 });
-// const client = IPFSHTTPClient("https://ipfs.infura.io:5001/api/v0");
-// const  client =  IPFSHTTPClient ({host:'ipfs.infura.io',port:5001,protocol:'https'});
 
 export default function AddEmpForm() {
 
@@ -61,7 +32,6 @@ export default function AddEmpForm() {
   const  uploadfiles  =async (e)=>{
     e.preventDefault();
     setuploading(true);
-    // if(Handler.form.)
     if(Handler.Image!==null){
       try{
         console.log("11111111");
