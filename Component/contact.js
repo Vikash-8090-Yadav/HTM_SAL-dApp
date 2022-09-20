@@ -32,14 +32,14 @@ export default function Contact() {
             <Grid item lg={6} >
               <Paper style={{marginRight: '40px'}}>
                 <Box p={5} >
-                  <TextField
+                  <TextField 
                     style={{width: "268px", marginRight: '10px'}}
                     helperText=" "
                     id="demo-helper-text-aligned-no-helper"
                     placeholder="Full name"
                     variant="outlined"
                   />
-                  <TextField
+                  <TextField 
                     style={{width: "268px"}}
                     helperText=" "
                     id="demo-helper-text-aligned-no-helper"
@@ -56,7 +56,7 @@ export default function Contact() {
                     />
                   </Box>
 
-                  <TextareaAutosize
+                  <TextareaAutosize 
                     style={{border: '1px solid gray', borderRadius: '5px', fontSize: '20px', width: "546px", marginTop:"15px"}}
                     maxRows={4}
                     aria-label="maximum height"
