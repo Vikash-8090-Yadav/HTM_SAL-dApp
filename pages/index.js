@@ -19,44 +19,53 @@ export default function Home({
     }){
       const[filter , setFilter] = useState(AllData);
   return (
+    <>
     <div>
-  <div className = "HomeWrapper">
-    <div className= "FilterWrapper  flex flex-col p-4 mt-4 bg-gray-100 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 ">
+  <div className = "HomeWrapper ">
+    <div className= "FilterWrapper sticky flex flex-col p-4 mt-4 bg-gray-100 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 ">
       <div className="Filteraction " style ={{fontSize:40}}/>
-      <div className='Category block py-2 pr-4 pl-3 rounded text-gray-700 md:bg-transparent'  onClick={()=>setFilter(internData)} >Intern</div>
-      <div className='Category block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ' onClick={()=>setFilter(HRData)}>H.R</div>
-      <div className='Category block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ' onClick={()=>setFilter(WebData)}>Web Developer</div>
-      <div className='Category block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ' onClick={()=>setFilter(SDEData)}>S.D.E</div>
+      <div className='Category block py-2 pr-4 pl-3 font-sans text-lg rounded text-gray-700 md:bg-transparent hover:bg-gray-100'  onClick={()=>setFilter(internData)} >Intern</div>
+      <div className='Category block py-2 pr-4 pl-3 font-sans text-lg hover:bg-gray-100 text-gray-700 rounded  md:hover:bg-transparent  md:p-0 ' onClick={()=>setFilter(HRData)}>H.R</div>
+      <div className='Category block py-2 pr-4 pl-3 font-sans text-lg hover:bg-gray-100 text-gray-700 rounded  md:hover:bg-transparent  md:p-0 ' onClick={()=>setFilter(WebData)}>Web Developer</div>
+      <div className='Category block py-2 pr-4 pl-3 font-sans text-lg  text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0 ' onClick={()=>setFilter(SDEData)}>S.D.E</div>
     </div>
-      <div className='Cardsswapper mt-5'>
-      {filter.map((e)=>{
-        console.log("image->",e.image);
+
+
+      <div className='Cardsswapper mt-8'>
+      {filter?.map((e)=>{
         return (
-          < div className='Card'>
+
+          < div className='Card space-y-6 '>
+
+
+            <div className='p-3 border-spacing-1 border-2 bg-blue-100 bg-gradient-to-r    max-w-sm rounded overflow-hidden shadow-lg '>
+
             <div className='CardImg'>
               <Image layout ="fill"
               src = {"https://sal-dapp.infura-ipfs.io/ipfs/" + e.image}
               />
             </div>
-            <div className="Title">
+            <div className=" text-center text-3xl font-sans Title ">
               {e.FirstName}
+
+            < div className='CardData font-bold text-xl mb-2 text-gray-700 text-base '>
+              <div className = "Text font-bold text-xl mb-2">Owner<AccountBoxIcon/></div>
+              <div className = "Text font-bold text-xl mb-2"> {e.owner.slice(0,6)}...{e.owner.slice(39)}<AccountBoxIcon/> </div>
             </div>
-            < div className='CardData'>
-              <div className = "Text">Owner<AccountBoxIcon/></div>
-              <div className = "Text">{e.owner.slice(0,6)}...{e.owner.slice(39)}<AccountBoxIcon/></div>
-            </div>
-            <div className ="CardData" >
+            <div className ="CardData text-gray-700 text-base" >
               <div className = "Text">Amount<AccountBoxIcon/></div>
               <div className = "Text">100 MATIC<AccountBoxIcon/></div>
             </div>
-            < div className= "CardData">
+            < div className= "CardData text-gray-700 text-base">
               <div className = "Text"><EventIcon /></div>
               <div className = "Text">{new Date(e.timestamp*1000).toLocaleString()}</div>
-            </div>
+            </div> </div> </div>
             <Button>
-              ADD MORE EMPLOYEE
+
             </Button>
           </div>
+
+
         )
       })
 }
@@ -64,6 +73,7 @@ export default function Home({
       </div>
     </div>
     </div>
+    </>
   )
 }
 
