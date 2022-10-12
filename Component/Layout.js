@@ -8,6 +8,7 @@ import Mainc from "./mnc"
 import Cat from "./Cool"
 import About from "./about"
 import Contact from "./contact"
+import Footer from "./footer"
 import { ToastContainer } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css";
 export default function Layout({children}) {
@@ -35,6 +36,7 @@ export default function Layout({children}) {
     <main className = " mn">
       <About/>
       <Contact/>
+       <Footer/>
     </main>
     </>
   )

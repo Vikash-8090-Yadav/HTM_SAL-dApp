@@ -88,13 +88,13 @@ export default function AddEmpForm() {
         <div className="form-container ">
           <form>
             <div className="inpiut-name ">
-              <input onChange={Handler?.FormHandler} value = {Handler?.form?.FirstName} type ="text" placeholder ="First Name" className="w-full px-3 py-2 placeholder-gray-500 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-800 dark:focus:ring-gray-900 dark:focus:border-gray-500 name" name = "FirstName" />
+              <input onChange={Handler?.FormHandler} value = {Handler?.form?.FirstName} type ="text" placeholder ="First Name" className="w-full px-3 py-2 placeholder-gray-500 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-white-700 dark:text-black dark:placeholder-gray-500 dark:border-gray-800  name" name = "FirstName" />
               <span>
-              <input  onChange={Handler?.FormHandler} value = {Handler?.form?.LastName} type ="text" placeholder ="Last Name" className="w-full px-3 py-2 placeholder-gray-500 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-800 dark:focus:ring-gray-900 dark:focus:border-gray-500 name name" name ="LastName"/>
+              <input  onChange={Handler?.FormHandler} value = {Handler?.form?.LastName} type ="text" placeholder ="Last Name" className="w-full px-3 py-2 placeholder-gray-500 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-white-700 dark:text-black dark:placeholder-gray-500 dark:border-gray-800 name name" name ="LastName"/>
               </span>
             </div>
             <div className="inpiut-name">
-              <input onChange={Handler?.FormHandler} value = {Handler?.form?.WallletAddress}  type ="text" placeholder ="Wallet Address" className="w-full px-3 py-2 placeholder-gray-500 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-800 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500 name text-name"name ="WallletAddress" />
+              <input onChange={Handler?.FormHandler} value = {Handler?.form?.WallletAddress}  type ="text" placeholder ="Wallet Address" className="w-full px-3 py-2 placeholder-gray-500 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-white-700 dark:text-black dark:placeholder-gray-500 dark:border-gray-800 name text-name"name ="WallletAddress" />
             </div>
             <div className="inpiut-name">
               <i class = "fa fa-useer lock"></i>
@@ -108,7 +108,7 @@ export default function AddEmpForm() {
               <div className="arrow"></div>
             </div>
 
-            <div className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500 name inpiut-name">
+            <div className="w-full px-12 py-2 placeholder-gray-500 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-white-700 dark:text-black dark:placeholder-gray-500 dark:border-gray-800  inpiut-name">
               <select onChange={Handler?.FormHandler} value = {Handler?.form?.Country}  className="text-name" name = "Country">
                 <option>select a country</option>
                 <option>India</option>
@@ -127,18 +127,7 @@ export default function AddEmpForm() {
                     <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
                   </svg>
                 </span>
-                <input  onChange={Handler?.ImageHandler}  type ="file" accept="image/*" className=" ml-3 form-control blockw-full
-px-3
-    py-1.5
-    text-base
-    font-normal
-    text-gray-700
-    bg-white bg-clip-padding
-    border border-solid border-gray-300
-    rounded
-    transition
-    ease-in-out
-    m-0
+                <input  onChange={Handler?.ImageHandler}  type ="file" accept="image/*" className=" ml-3 form-control blockw-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0
     focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-non "/>              </div>
             </div>
             <div className=" inpiut-name ">
