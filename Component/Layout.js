@@ -9,6 +9,7 @@ import Cat from "./Cool"
 import About from "./about"
 import Contact from "./contact"
 import Footer from "./footer"
+import Aboutus from "./testinomial"
 import { ToastContainer } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css";
 export default function Layout({children}) {
@@ -28,13 +29,13 @@ export default function Layout({children}) {
     <Mainc>{children}</Mainc>
     <Rights/>
     </lms>
-
     {/*
     THis lsm stand for the LEFT MAIN  and RIGHT-SIDE
   */}
 
     <main className = " mn">
       <About/>
+      <Aboutus />
       <Contact/>
        <Footer/>
     </main>
