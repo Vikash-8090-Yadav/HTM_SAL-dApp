@@ -37,8 +37,8 @@ export default function Layout({children}) {
       <About/>
       <Aboutus />
       <Contact/>
-       <Footer/>
-    </main>
+         </main>
+         <Footer/>
     </>
   )
 }

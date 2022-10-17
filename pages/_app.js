@@ -1,6 +1,11 @@
 
 import Layout from "../Component/Layout"
 import '../styles/globals.css'
+import Image from 'next/image'
+import styles from '../styles/Home.module.css'
+import Logout from "../Component/logout"
+import NavR from "../Component/navR"
+import { TailSpin } from "react-loader-spinner";
 // function MyApp({ Component,  pageProps = {}}) {
 //   return <>
 //   <Layout>
@@ -66,64 +71,114 @@ function MyApp({Component,  pageProps = {}}) {
   };
 
   return (
-    <div className='container'>
-      <h1>AUTHENTICATION</h1>
+    <div>
+
       <div>
         {loading ? (
-          <div className='loading'>
-            <ColorRing
-              visible={true}
-              height='100'
-              width='80'
-              ariaLabel='blocks-loading'
-              wrapperStyle={{}}
-              wrapperClass='blocks-wrapper'
-              colors={['#000000']}
-            />
-          </div>
+          <div className={styles.Spinner}>
+            <ColorRing height={90}/>
+            <div className={styles.heading}>WELCOME TO SAL DAPP ...</div>
+            </div>
         ) : !loading && loggedIn ? (
           <div>
-            <h2 className='sub-heading'>Logged In</h2>
+          <div className=' big bg-gradient-to-r from-indigo-800'>
+          <button  onClick={handleLogout}>
+            LOGOUT <Logout/>
+          </button>
+          </div>
             <Layout>
+
               <Component {...pageProps} />
+
               </Layout>
-            <h3>Welcome </h3>
-            <h3>you're logged in successfully.</h3>
-            <button className='big-button' onClick={handleLogout}>
-              Logout
-            </button>
+
           </div>
         ) : (
-          <div className='box'>
-            <h2 className='sub-heading'>Select a login</h2>
-            <div className='options'>
-              <button className='big-button' onClick={() => login('google')}>
-                Google Login
-              </button>
-              <button className='big-button' onClick={() => login('twitch')}>
-                Twitch Login
-              </button>
-              <button className='big-button' onClick={() => login('discord')}>
-                Discord Login
-              </button>
-              <button className='big-button' onClick={() => login('twitter')}>
-                Twitter Login
-              </button>
-            </div>
-            <div className='form'>
-              <input
-                value={email}
-                type='text'
-                placeholder='Enter email'
-                onChange={handleEmailChange}
-              />
-              <button
-                className='big-button'
-                onClick={() => loginWithLink(email)}
-              >
-                Login with link
-              </button>
-            </div>
+          <div>
+          <div className={styles.na}><Image className={styles.g1} src ="/../public/images/bb1.jpg" width ={1860} height = {490}/></div>
+    <div className={styles.login}>
+    <div className={styles.Left}>
+    <div>
+    <h1>
+    Make your
+    <br></br>
+    dApps secure<br></br>
+    from the <br></br>
+    ground up !
+    </h1>
+    </div>
+    <div className={styles.bb3}><Image className={styles.g1} src ="/../public/images/bb3.png" width ={275} height = {350}
+   /></div>
+    </div>
+    <div  className={styles.Right}>
+    <h1 className={styles.h1} >Welcome to Sal-dApp</h1>
+    <p>Let's get started</p>
+    <div className={styles.h5}>
+    Continue With :
+    </div>
+    <div className={styles.cntner}>
+    <button className={styles.b} onClick={() => login('google')} >
+    <div className={styles.img}><Image className={styles.g1} src ="/../public/images/google-logo.png" width ={39} height = {50}
+   />
+   <div className={styles.g}> GOOGLE</div>
+   </div>
+    </button><button onClick={() => login('google')} className={styles.b}>
+    <div className={styles.img}><Image className={styles.g2} src ="/../public/images/github-logo.png" width ={39} height = {50}
+   />
+   <div className={styles.g}> Github</div>
+   </div>
+    </button>
+    </div>
+    <div className={styles.cntner}>
+    <button className={styles.b}>
+    <div className={styles.img}><Image className={styles.g1} src ="/../public/images/twitter-logo.png" width ={39} height = {50}
+   />
+   <div className={styles.g}> Twitter</div>
+   </div>
+    </button><button className={styles.b}>
+    <div className={styles.img}><Image className={styles.g} src ="/../public/images/discord-logo.png" width ={39} height = {50}
+   />
+   <div className={styles.g}> Discord</div>
+   </div>
+    </button>
+    </div>
+    </div>
+    </div>
+    <div className ={styles.footer}>
+    <div className ={styles.footerl} >
+    <div className ={styles.T}>
+    Terms of use
+    </div>
+    <div className ={styles.T}>
+    Privacy Ploicy
+    </div>
+    <div className ={styles.T}>
+    Docs
+    </div>
+    </div>
+    <div className ={styles.footerm}>
+    <div>Powered by SALL-dApp</div>
+    </div>
+    <div className ={styles.footerr} >
+    <div>
+    <div className ={styles.fr}>
+    <Image className={styles.r} src ="/../public/images/twitter-logo.png" width ={39} height = {50}
+   /></div>
+    </div>
+    <div>
+    <div className ={styles.fr}>
+    <Image className={styles.r} src ="/../public/images/discord-logo.png" width ={39} height = {50}
+   /></div>
+    </div>
+    <div>
+    <div className ={styles.fr}>
+    <Image className={styles.r} src ="/../public/images/github-logo.png" width ={39} height = {50}
+   />
+   </div>
+    </div>
+    </div>
+
+    </div>
           </div>
         )}
       </div>
