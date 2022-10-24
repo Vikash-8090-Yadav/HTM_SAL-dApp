@@ -35,13 +35,13 @@ export default function Home({
       {filter?.map((e)=>{
         return (
 
-          < div className='Card space-y-6 '>
+          < div className='Card space-y-6 ' key = {e.FirstName}>
 
 
             <div className='p-3 border-spacing-1 border-2 bg-blue-100 bg-gradient-to-r    max-w-sm rounded overflow-hidden shadow-lg '>
 
             <div className='CardImg'>
-              <Image layout ="fill"
+              <Image layout ="fill" alt = "sal-dApp"
               src = {"https://sal-dapp.infura-ipfs.io/ipfs/" + e.image}
               />
             </div>

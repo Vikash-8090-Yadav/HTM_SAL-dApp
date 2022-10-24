@@ -32,9 +32,9 @@ export default function Home({
       {filter.map((e)=>{
         console.log("image->",e.image);
         return (
-          < div className='Card'>
+          < div className='Card' key = {e.FirstName}>
             <div className='CardImg'>
-              <Image layout ="fill"
+              <Image layout ="fill" alt = "sal-dApp"
               src = {"https://sal-dapp.infura-ipfs.io/ipfs/" + e.image}
               />
             </div>

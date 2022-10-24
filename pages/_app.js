@@ -112,7 +112,7 @@ function MyApp({Component,  pageProps = {}}) {
     </div>
     <div  className={styles.Right}>
     <h1 className={styles.h1} >Welcome to Sal-dApp</h1>
-    <p>Let's get started</p>
+    <p>Lets get started</p>
     <div className={styles.h5}>
     Continue With :
     </div>
