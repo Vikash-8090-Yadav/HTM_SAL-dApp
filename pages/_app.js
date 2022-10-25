@@ -8,12 +8,11 @@ import NavR from "../Component/navR"
 import { TailSpin } from "react-loader-spinner";
 
 import bb1 from "../images/bb1.jpg";
-import bb3 from "../images/bb3.jpg";
-import google-logo from "../images/google-logo.png";
-import github-logo from "../images/github-logo.png";
-import twitter-logo from "../images/twitter-logo.png";
-import discord-logo from "../images/discord-logo.png";
-import bb1 from "../images/bb1.jpg";
+import bb3 from "../images/bb3.png";
+import googlelogo from "../images/google-logo.png";
+import githublogo from "../images/github-logo.png";
+import twitterlogo from "../images/twitter-logo.png";
+import discordlogo from "../images/discord-logo.png";
 
 
 // function MyApp({ Component,  pageProps = {}}) {
@@ -128,12 +127,12 @@ function MyApp({Component,  pageProps = {}}) {
     </div>
     <div className={styles.cntner}>
     <button className={styles.b} onClick={() => login('google')} >
-    <div className={styles.img}><Image className={styles.g1} src ={google-logo} width ={39} height = {50} alt ="hero-image"
+    <div className={styles.img}><Image className={styles.g1} src ={googlelogo} width ={39} height = {50} alt ="hero-image"
    />
    <div className={styles.g}> GOOGLE</div>
    </div>
     </button><button onClick={() => login('google')} className={styles.b}>
-    <div className={styles.img}><Image className={styles.g2} src ={github-logo} width ={39} height = {50} alt ="hero-image"
+    <div className={styles.img}><Image className={styles.g2} src ={githublogo} width ={39} height = {50} alt ="hero-image"
    />
    <div className={styles.g}> Github</div>
    </div>
@@ -141,12 +140,12 @@ function MyApp({Component,  pageProps = {}}) {
     </div>
     <div className={styles.cntner}>
     <button className={styles.b}>
-    <div className={styles.img}><Image className={styles.g1} src ={twitter-logo} width ={39} height = {50} alt ="hero-image"
+    <div className={styles.img}><Image className={styles.g1} src ={twitterlogo} width ={39} height = {50} alt ="hero-image"
    />
    <div className={styles.g}> Twitter</div>
    </div>
     </button><button className={styles.b}>
-    <div className={styles.img}><Image className={styles.g} src ={discord-logo} width ={39} height = {50} alt ="hero-image"
+    <div className={styles.img}><Image className={styles.g} src ={discordlogo} width ={39} height = {50} alt ="hero-image"
    />
    <div className={styles.g}> Discord</div>
    </div>
