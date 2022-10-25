@@ -171,17 +171,17 @@ function MyApp({Component,  pageProps = {}}) {
     <div className ={styles.footerr} >
     <div>
     <div className ={styles.fr}>
-    <Image className={styles.r} src ="/../public/images/twitter-logo.png" width ={39} height = {50} alt ="hero-image"
+    <Image className={styles.r} src ={twitterlogo} width ={39} height = {50} alt ="hero-image"
    /></div>
     </div>
     <div>
     <div className ={styles.fr}>
    </div>
-   <Image className={styles.r} src ="/../public/images/discord-logo.png" width ={39} height = {50} alt ="hero-image"
+   <Image className={styles.r}  src ={googelogo} width ={39} height = {50} alt ="hero-image"
    /></div>
     <div>
     <div className ={styles.fr}>
-    <Image className={styles.r} src ="/../public/images/github-logo.png" width ={39} height = {50} alt ="hero-image"
+    <Image className={styles.r}  src ={githublogo} width ={39} height = {50} alt ="hero-image"
    />
    </div>
     </div>
