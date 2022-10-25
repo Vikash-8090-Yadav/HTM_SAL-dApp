@@ -177,7 +177,7 @@ function MyApp({Component,  pageProps = {}}) {
     <div>
     <div className ={styles.fr}>
    </div>
-   <Image className={styles.r}  src ={googelogo} width ={39} height = {50} alt ="hero-image"
+   <Image className={styles.r}  src ={googlelogo} width ={39} height = {50} alt ="hero-image"
    /></div>
     <div>
     <div className ={styles.fr}>
