@@ -7,7 +7,15 @@ import Logout from "../Component/logout"
 import NavR from "../Component/navR"
 import { TailSpin } from "react-loader-spinner";
 
-import bb12 from "../images/bb1.jpg";
+import bb1 from "../images/bb1.jpg";
+import bb3 from "../images/bb3.jpg";
+import google-logo from "../images/google-logo.png";
+import github-logo from "../images/github-logo.png";
+import twitter-logo from "../images/twitter-logo.png";
+import discord-logo from "../images/discord-logo.png";
+import bb1 from "../images/bb1.jpg";
+
+
 // function MyApp({ Component,  pageProps = {}}) {
 //   return <>
 //   <Layout>
@@ -97,7 +105,7 @@ function MyApp({Component,  pageProps = {}}) {
           </div>
         ) : (
           <div>
-          <div className={styles.na}><Image className={styles.g1} src ={bb12} width ={1860} height = {490} alt ="hero-image"/></div>
+          <div className={styles.na}><Image className={styles.g1} src ={bb1} width ={1860} height = {490} alt ="hero-image"/></div>
     <div className={styles.login}>
     <div className={styles.Left}>
     <div>
@@ -109,7 +117,7 @@ function MyApp({Component,  pageProps = {}}) {
     ground up !
     </h1>
     </div>
-    <div className={styles.bb3}><Image className={styles.g1} src ="/../public/images/bb3.png" width ={275} height = {350} alt ="hero-image"
+    <div className={styles.bb3}><Image className={styles.g1} src ={bb3} width ={275} height = {350} alt ="hero-image"
    /></div>
     </div>
     <div  className={styles.Right}>
@@ -120,12 +128,12 @@ function MyApp({Component,  pageProps = {}}) {
     </div>
     <div className={styles.cntner}>
     <button className={styles.b} onClick={() => login('google')} >
-    <div className={styles.img}><Image className={styles.g1} src ="/../public/images/google-logo.png" width ={39} height = {50} alt ="hero-image"
+    <div className={styles.img}><Image className={styles.g1} src ={google-logo} width ={39} height = {50} alt ="hero-image"
    />
    <div className={styles.g}> GOOGLE</div>
    </div>
     </button><button onClick={() => login('google')} className={styles.b}>
-    <div className={styles.img}><Image className={styles.g2} src ="/../public/images/github-logo.png" width ={39} height = {50} alt ="hero-image"
+    <div className={styles.img}><Image className={styles.g2} src ={github-logo} width ={39} height = {50} alt ="hero-image"
    />
    <div className={styles.g}> Github</div>
    </div>
@@ -133,12 +141,12 @@ function MyApp({Component,  pageProps = {}}) {
     </div>
     <div className={styles.cntner}>
     <button className={styles.b}>
-    <div className={styles.img}><Image className={styles.g1} src ="/../public/images/twitter-logo.png" width ={39} height = {50} alt ="hero-image"
+    <div className={styles.img}><Image className={styles.g1} src ={twitter-logo} width ={39} height = {50} alt ="hero-image"
    />
    <div className={styles.g}> Twitter</div>
    </div>
     </button><button className={styles.b}>
-    <div className={styles.img}><Image className={styles.g} src ="/../public/images/discord-logo.png" width ={39} height = {50} alt ="hero-image"
+    <div className={styles.img}><Image className={styles.g} src ={discord-logo} width ={39} height = {50} alt ="hero-image"
    />
    <div className={styles.g}> Discord</div>
    </div>
