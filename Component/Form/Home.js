@@ -51,7 +51,7 @@ export default function Home({
               <div className = "Text">Amount<AccountBoxIcon/></div>
               <div className = "Text">100 MATIC<AccountBoxIcon/></div>
             </div>
-            < div className= "CardData mb-3 font-normal text-gray-500 dark:text-gray-400 ">
+            < div className= "CardData mb-  3 font-normal text-gray-500 dark:text-gray-400 ">
               <div className = "Text"><EventIcon /></div>
               <div className = "Text">{new Date(e.timestamp*1000).toLocaleString()}</div>
             </div>
