@@ -18,7 +18,7 @@ export default function Home({
       WebData
     }){
       const[filter , setFilter] = useState(AllData);
-      console.log("data",filter);
+
   return (
     <div>
     <div className = "HomeWrapper">
@@ -116,7 +116,7 @@ export async function getStaticProps(){
     }
   });
   const getSDE2Data = contract.filters.salcreated(null,null,null,null,null,null,'S.D.E-2');
-  console.log("sde",geSDE2Data);
+
   const SDE2 = await contract.queryFilter(getSDE2Data);
 
   const SDEData = SDE2.map((e)=>{
@@ -139,7 +139,7 @@ export async function getStaticProps(){
     }
   });
 
-  console.log(AllData);
+
   return {
     props:{
       AllData,

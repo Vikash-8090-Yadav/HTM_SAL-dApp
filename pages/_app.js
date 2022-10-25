@@ -6,6 +6,8 @@ import styles from '../styles/Home.module.css'
 import Logout from "../Component/logout"
 import NavR from "../Component/navR"
 import { TailSpin } from "react-loader-spinner";
+
+import bb12 from "../images/bb1.jpg";
 // function MyApp({ Component,  pageProps = {}}) {
 //   return <>
 //   <Layout>
@@ -95,7 +97,7 @@ function MyApp({Component,  pageProps = {}}) {
           </div>
         ) : (
           <div>
-          <div className={styles.na}><Image className={styles.g1} src ="/../public/images/bb1.jpg" width ={1860} height = {490} alt ="hero-image"/></div>
+          <div className={styles.na}><Image className={styles.g1} src ={bb12} width ={1860} height = {490} alt ="hero-image"/></div>
     <div className={styles.login}>
     <div className={styles.Left}>
     <div>
@@ -107,7 +109,7 @@ function MyApp({Component,  pageProps = {}}) {
     ground up !
     </h1>
     </div>
-    <div className={styles.bb3}><Image className={styles.g1} src ="../public/images/bb3.png" width ={275} height = {350} alt ="hero-image"
+    <div className={styles.bb3}><Image className={styles.g1} src ="/../public/images/bb3.png" width ={275} height = {350} alt ="hero-image"
    /></div>
     </div>
     <div  className={styles.Right}>
@@ -167,9 +169,9 @@ function MyApp({Component,  pageProps = {}}) {
     </div>
     <div>
     <div className ={styles.fr}>
-   /></div>
+   </div>
    <Image className={styles.r} src ="/../public/images/discord-logo.png" width ={39} height = {50} alt ="hero-image"
-    </div>
+   /></div>
     <div>
     <div className ={styles.fr}>
     <Image className={styles.r} src ="/../public/images/github-logo.png" width ={39} height = {50} alt ="hero-image"
