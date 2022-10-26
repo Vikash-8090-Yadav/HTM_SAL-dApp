@@ -35,7 +35,7 @@ export default function Home({
       {filter?.map((e)=>{
         return (
 
-          < div className='Card  ' key = {e.FirstName}>
+          < div className='Card' key = {e.FirstName}>
 
 
             <div className='p-3 border-spacing-1 border-2 bg-blue-100 bg-gradient-to-r    max-w-sm rounded overflow-hidden shadow-lg '>

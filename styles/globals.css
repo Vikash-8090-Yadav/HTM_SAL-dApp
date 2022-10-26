@@ -155,11 +155,15 @@ wrapperM ul li{
   margin-right:5px;
   color: black;
 }
+
+
 .add-conatiner{
+  padding-left: 122px;
   background-color: white;
   width: 500px;
   padding: 25px;
-  margin:50px auto 0;
+  margin-left: 382px;
+  /* margin:50px auto 0; */
   border-top: 5px solid blue;
   box-shadow: 0 0 7px 5px rgba(0,0,0,0.5);
 }
@@ -248,14 +252,14 @@ wrapperM ul li{
   cursor: pointer;
 }
 .Card {
-  background-color: orange;
+  border: 2px solid yellow;
   max-width:100vh;
-  min-height: 0px;
   margin-top: 20px;
   &:hover{
-    transform:translateY(-10px);
-    transition: transform 0.5s;
+    transform: translateY(10px);
+    transition: transform 1.5s;
   }
+
   &:not(:hover){
     transition: transform 0.5s;
   }
