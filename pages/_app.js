@@ -90,7 +90,7 @@ function MyApp({Component,  pageProps = {}}) {
             </div>
         ) : !loading && loggedIn ? (
           <div>
-          <div className=' big bg-gradient-to-r from-indigo-800'>
+          <div className={styles.big}  className='big bg-gradient-to-r from-indigo-800'>
           <button  onClick={handleLogout}>
             LOGOUT <Logout/>
           </button>

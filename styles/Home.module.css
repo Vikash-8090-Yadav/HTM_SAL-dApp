@@ -148,3 +148,14 @@ justify-content: space-between;
   font-size: 1.9em;
   padding-top: 12px;
 }
+
+.big{
+  color: white;
+  width: 200vh;
+  font-weight: bold;
+  padding-right: 32px;
+  display: flex;
+
+  flex-direction: row-reverse;
+  background-color: #1876f2;
+}

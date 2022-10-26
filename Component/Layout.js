@@ -3,6 +3,7 @@ import NavL from "./navL"
 import NavM from "./navM"
 import NavR from "./navR"
 import Lefts from "./lft"
+import styles from "../styles/nav.module.css"
 import Rights from "./rht"
 import Mainc from "./mnc"
 import Cat from "./Cool"
@@ -26,7 +27,9 @@ export default function Layout({children}) {
     <Cat/>
     <lms className="container">
     <Lefts/>
+    <div  className="mn-cnt">
     <Mainc>{children}</Mainc>
+    </div>
     <Rights/>
     </lms>
     {/*

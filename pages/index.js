@@ -20,22 +20,22 @@ export default function Home({
       const[filter , setFilter] = useState(AllData);
   return (
     <>
-    <div>
+    <div className="bind-home-card">
   <div className = "HomeWrapper ">
     <div className= "FilterWrapper sticky flex flex-col p-4 mt-4 bg-gray-100 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 ">
       <div className="Filteraction " style ={{fontSize:40}}/>
-      <div className='Category block py-2 pr-4 pl-3 font-sans text-lg rounded text-gray-700 md:bg-transparent hover:bg-gray-100'  onClick={()=>setFilter(internData)} >Intern</div>
-      <div className='Category block py-2 pr-4 pl-3 font-sans text-lg hover:bg-gray-100 text-gray-700 rounded  md:hover:bg-transparent  md:p-0 ' onClick={()=>setFilter(HRData)}>H.R</div>
-      <div className='Category block py-2 pr-4 pl-3 font-sans text-lg hover:bg-gray-100 text-gray-700 rounded  md:hover:bg-transparent  md:p-0 ' onClick={()=>setFilter(WebData)}>Web Developer</div>
-      <div className='Category block py-2 pr-4 pl-3 font-sans text-lg  text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0 ' onClick={()=>setFilter(SDEData)}>S.D.E</div>
+      <div className='Category  py-2 pr-4 pl-3 font-sans text-lg rounded text-gray-700 md:bg-transparent hover:bg-gray-100'  onClick={()=>setFilter(internData)} >Intern</div>
+      <div className='Category  py-2 pr-4 pl-3 font-sans text-lg hover:bg-gray-100 text-gray-700 rounded  md:hover:bg-transparent  md:p-0 ' onClick={()=>setFilter(HRData)}>H.R</div>
+      <div className='Category  py-2 pr-4 pl-3 font-sans text-lg hover:bg-gray-100 text-gray-700 rounded  md:hover:bg-transparent  md:p-0 ' onClick={()=>setFilter(WebData)}>Web Developer</div>
+      <div className='Category  py-2 pr-4 pl-3 font-sans text-lg  text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0 ' onClick={()=>setFilter(SDEData)}>S.D.E</div>
     </div>
 
 
-      <div className='Cardsswapper mt-8'>
+      <div className='Cardsswapper '>
       {filter?.map((e)=>{
         return (
 
-          < div className='Card space-y-6 ' key = {e.FirstName}>
+          < div className='Card  ' key = {e.FirstName}>
 
 
             <div className='p-3 border-spacing-1 border-2 bg-blue-100 bg-gradient-to-r    max-w-sm rounded overflow-hidden shadow-lg '>
