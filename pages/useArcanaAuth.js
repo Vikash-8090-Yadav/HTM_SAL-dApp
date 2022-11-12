@@ -14,7 +14,7 @@ function useArcanaAuth() {
   const initializeAuth = async () => {
     if (!auth) {
       auth = new AuthProvider(appId);
-      await auth.init({ appMode: 2, position: "right" });
+      await auth.init({ appMode: 1, position: "right" });
       setInitialized(true);
     }
   }
