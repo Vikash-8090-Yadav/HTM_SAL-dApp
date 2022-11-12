@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 //Config
 // const appId = 2364;
 
-const appId = 3B01e48556c35033A3Df7BbF8F932Ee42b0dF557;
+const appId = '3B01e48556c35033A3Df7BbF8F932Ee42b0dF557';
 
-let auth;
+const  auth = new AuthProvider(appId);
 
 function useArcanaAuth() {
   const [initialized, setInitialized] = useState(false);
