@@ -22,7 +22,7 @@ function MyApp({ Component,  pageProps = {}}) {
   </Layout>
   </>
 }
-// export default MyApp
+export default MyApp
 // import React, { useState, useEffect } from 'react';
 // import { ColorRing } from 'react-loader-spinner';
 
