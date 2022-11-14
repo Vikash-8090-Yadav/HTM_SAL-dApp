@@ -1,4 +1,4 @@
-// import { AuthProvider, AppMode,} from "https://cdn.jsdelivr.net/npm/@arcana/auth/dist/standalone/auth.esm.js";
+import { AuthProvider, AppMode,} from "https://cdn.jsdelivr.net/npm/@arcana/auth/dist/standalone/auth.esm.js";
 // import { useEffect, useState } from "react";
 
 // //Config
@@ -73,7 +73,7 @@
 import {
   AuthProvider,
   AppMode,
-} from "https://cdn.jsdelivr.net/npm/@arcana/auth@0.1.3/dist/standalone/auth.esm.js";
+} 
 import { useEffect, useState } from "react";
 
 //Config
