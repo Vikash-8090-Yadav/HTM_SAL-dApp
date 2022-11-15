@@ -78,24 +78,18 @@ import { useEffect, useState } from "react";
 
 const appId = "3B01e48556c35033A3Df7BbF8F932Ee42b0dF557";
 
-let auth;
-// let auth = new AuthProvider(appId);
+
+let auth = new AuthProvider(appId);
 
 function useArcanaAuth() {
   const [initialized, setInitialized] = useState(false);
 
   
+
   const initializeAuth = async () => {
-    if (!auth) {
-      auth = new AuthProvider(appId);
-      await auth.init({ appMode: 2, position: "right" });
-      setInitialized(true);
-    }
-  }
-//   const initializeAuth = async () => {
-//     await auth.init({ appMode: 2, position: "right" });
-//     setInitialized(true);
-//   };
+    await auth.init({ appMode: 2, position: "right" });
+    setInitialized(true);
+  };
 
   //Check isLoggedIn
   const isLoggedIn = async () => {
