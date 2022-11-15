@@ -6,7 +6,7 @@
 
 // const appId = '3B01e48556c35033A3Df7BbF8F932Ee42b0dF557';
 
-// let  auth = new AuthProvider(appId);
+// let  auth;
 
 // function useArcanaAuth() {
 //   const [initialized, setInitialized] = useState(false);
