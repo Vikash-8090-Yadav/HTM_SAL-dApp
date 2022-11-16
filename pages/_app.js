@@ -18,6 +18,7 @@
 // // function MyApp({ Component,  pageProps = {}}) {
 // //   return <>
 // //   <Layout>
+
 // //   <Component {...pageProps} />
 // //   </Layout>
 // //   </>
@@ -279,7 +280,7 @@ function MyApp({ Component, pageProps = {} }) {
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
   };
-}
+
 
   return (
     <div>
