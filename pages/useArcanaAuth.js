@@ -190,8 +190,9 @@ function useArcanaAuth() {
 
   //Logout
   const logout = async () => {
-    if (initialized) {
-      return await auth.logout();
+    if (initialized && loggedIn) {
+      await auth.logout();
+      setLoggedIn(false);
     }
   };
 
