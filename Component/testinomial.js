@@ -7,6 +7,7 @@ import useAboutus from "./testinomialstyle"
 // import Img11 from '../public/1.png';
 // import Img22 from '../public/2.png';
 // import Img33 from './photos/img3.jpg';
+import cool from './images/cool.jpg'
 
 import {Box, Button, Typography, Rating, MobileStepper} from '@mui/material';
 
@@ -18,21 +19,21 @@ const imagesHp = [
         head1: 'John Alex',
         para1: 'This division is not obsolete but has changed. Natural philosophy has split into the various natural sciences, especially astronomy, and cosmology. Moral philosophy has birthed the social sciences, but still includes value theory.',
         para2: 'CEO Mabelya',
-        imaged: "../public/1.png",
+        imaged: "./images/cool.jpg",
     },
 
     {
         head1: 'Jessica Moore',
         para1: 'This division is not obsolete but has changed. Natural philosophy has split into the various natural sciences, especially astronomy, and cosmology. Moral philosophy has birthed the social sciences, but still includes value theory.',
         para2: 'CEO Mabelya',
-        imaged: "../public/1.png",
+        imaged: "./images/cool.jpg",
     },
 
     {
         head1: 'John Doe',
         para1: 'This division is not obsolete but has changed. Natural philosophy has split into the various natural sciences, especially astronomy, and cosmology. Moral philosophy has birthed the social sciences, but still includes value theory.',
         para2: 'CEO Mabelya',
-        imaged: "../public/1.png",
+        imaged: "./images/cool.jpg",
     },
 
   ];

@@ -1,6 +1,9 @@
 import Link from "next/link"
 import Image from "next/image"
-
+import polygon from './images/polygon.png'
+import spheron from './images/spheron.png'
+import arcana from './images/arcana.png'
+import cool from './images/cool.jpg'
 export default function About() {
     return (
       <>
@@ -29,7 +32,7 @@ export default function About() {
     </Link>
           </div>
         </div>
-         <Image class="rounded-2xl" src ="/../public/images/polygon.png" width ={400} height = {400}/>      </div>
+        <Image  src ={polygon} width ={400} height = {400} alt ="hero-image"/>      </div>
     </div>
 
 
@@ -37,7 +40,7 @@ export default function About() {
     <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div class="flex flex-col items-center justify-between w-full mb-10 lg:flex-row">
 
-      <Image class="rounded-2xl" src ="/../public/images/spheron.png" width ={400} height = {400}/>
+      <Image  src ={spheron} width ={400} height = {400} alt ="hero-image"/>  
 
         <div class="mb-16 lg:mb-0 lg:max-w-lg lg:pr-5">
 
@@ -81,12 +84,12 @@ export default function About() {
             <a
       class="flex object-cover sm:mr-64 mr-32 object-top items-center text-white border border-2 justify-center w-full sm:px-10 py-4 leading-6 bg-black rounded-lg font-black"
     >
-       &nbsp;&nbsp;<Image src ="/../public/images/arcana.png" width ={400} height = {400}/>&nbsp;&nbsp; Get Started
+       &nbsp;&nbsp;<Image  src ={arcana} width ={400} height = {400} alt ="hero-image"/>&nbsp;&nbsp; Get Started
     </a>
     </Link>
           </div>
         </div>
-        <Image class="rounded-2xl" src ="/../public/images/arcana.png" width ={400} height = {400}/>
+        <Image  src ={arcana} width ={400} height = {400} alt ="hero-image"/>
       </div>
     </div>
 
@@ -94,7 +97,7 @@ export default function About() {
     <div class="sm:px-4 py-16  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div class="flex flex-col max-w-screen-lg overflow-hidden bg-white border rounded-3xl shadow-sm lg:flex-row sm:mx-auto">
         <div class="relative lg:w-1/2">
-        <Image src ="/../public/images/cool.jpg" width ={400} height = {400}/>
+        <Image src ={cool} width ={400} height = {400}  alt ="hero-image"/>
           <svg
             class="absolute top-0 right-0 hidden h-full text-white lg:inline-block"
             viewBox="0 0 20 104"
@@ -114,12 +117,13 @@ export default function About() {
           </h5>
           <p class="mb-8 text-blue-400 font-black">
           </p>
-          <div class="flex items-left">
-          <Link href="/comingsoon">
+          <div style={{color:'red'}} class="flex items-left">
+          <Link href="/comingsoon"> 
            <a
-           class="flex hover:border-2 hover:shadow-xl items-center text-white border border-2 justify-center w-full sm:px-10 py-4 leading-6 bg-black rounded-lg font-black"
+           class="flex hover:border-2 hover:shadow-xl items-center  border border-2 justify-center w-full sm:px-10 py-4 leading-6 bg-white rounded-lg font-black"
            >
-           {/* &nbsp;&nbsp;<Image width="25" alt="gmail logo" src="https://cdn.icon-icons.com/icons2/2170/PNG/512/google_logo_brand_social_icon_133256.png" />&nbsp;&nbsp; Contact Us */}
+            Contact Us
+           {/* &nbsp;&nbsp;<Image height='30' width="25" alt="gmail logo" src={gm} />&nbsp;&nbsp; Contact Us */}
            </a>
            </Link>
           </div>
