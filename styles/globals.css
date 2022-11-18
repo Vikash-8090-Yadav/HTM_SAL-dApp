@@ -335,10 +335,11 @@ wrapperM ul li{
 }
 .big{
   color: white;
-  width: 194vh;
+  /* width: 194vh; */
   font-weight: bold;
   padding-right: 52px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row-reverse;
   background-color: #1876f2;
 }
@@ -347,3 +348,16 @@ wrapperM ul li{
   height: 570px;
 
 } */
+.hero{
+  /* padding-left: 300px; */
+  /* @media{max-width 920px;
+    
+  } */
+  display: flex;
+  flex-wrap: wrap;
+  max-width:auto;
+  height: 100%;
+
+  background-color: #1876f2;
+}
+
