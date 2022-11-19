@@ -28,16 +28,16 @@
   flex-direction: row-reverse;
   flex-wrap: wrap;
   width: 100%;
-  padding: 4%;
+  padding: 3%;
 }
 
 .left{
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 50%;
   font-size: 2.5em;
   font-weight: 600;
-  text-align: right;
+  text-align: center;
 }
 
 .bb3{
@@ -47,7 +47,7 @@
 .right{
   width: 50%;
   font-weight: 600;
-  text-align: left;
+  text-align: center;
   font-size: 1.25em;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .h5{
-  text-align: left;
+  text-align: center;
   padding-top: 20px;
   font-size: 1.2em;
   font-weight: bold;

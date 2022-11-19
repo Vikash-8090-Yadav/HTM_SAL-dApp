@@ -309,6 +309,7 @@ function MyApp({ Component, pageProps = {} }) {
                 <div>
                   <h1>Make your dApps secure from the ground up!</h1>
                 </div>
+                
                 <div className={styles.bb3}>
                   <Image className={styles.g1} src ={bb3} width ={275} height = {350} alt ="hero-image"/>
                 </div>
@@ -316,8 +317,8 @@ function MyApp({ Component, pageProps = {} }) {
 
               <div className={styles.right}>
                 <h1 className={styles.h1} >Welcome to Sal-dApp</h1>
-                {/* <p>Lets get started</p> */}
                 <div className={styles.h5}>Continue With :</div>
+
                 <div className={styles.center}>
                   <button className={styles.b} onClick={() => login('google')} >
                     <div className={styles.img}>
@@ -325,6 +326,7 @@ function MyApp({ Component, pageProps = {} }) {
                       <div className={styles.g}> GOOGLE</div>
                     </div>
                   </button>
+
                   <button onClick={() => login('google')} className={styles.b}>
                     <div className={styles.img}>
                       <Image className={styles.g2} src ={githublogo} width ={39} height = {50} alt ="hero-image"/>
@@ -332,6 +334,7 @@ function MyApp({ Component, pageProps = {} }) {
                     </div>
                   </button>
                 </div>
+
                 <div className={styles.center}>
                   <button className={styles.b}>
                     <div className={styles.img}>
@@ -339,6 +342,7 @@ function MyApp({ Component, pageProps = {} }) {
                       <div className={styles.g}> Twitter</div>
                     </div>
                   </button>
+
                   <button className={styles.b}>
                     <div className={styles.img}>
                       <Image className={styles.g} src ={discordlogo} width ={39} height = {50} alt ="hero-image"/>
@@ -346,6 +350,7 @@ function MyApp({ Component, pageProps = {} }) {
                     </div>
                   </button>
                 </div>
+
               </div>
             </div>
             <div className ={styles.footer}>
